@@ -1,0 +1,17 @@
+LINK for reference: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
+(according to the steps in the link. we have completed 2 steps. we will continue from 3rd step)
+
+in Public EC2 machine
+    sudo dnf install -y php php-mysqli mariadb105
+to check versions
+    php -v
+    httpd -v
+add ec2-user to apache group
+    usermod -a -G apache ec2-user
+change group ownership of dir
+    sudo chown -R ec2-user:apache /var/www
+    sudo chmod 2775 /var/www
+change permissions of directories
+    find /var/www -type d -exec sudo chmod 2775 {} \;
+change permissions of files
+    find /var/www -type f -exec sudo chmod 0664 {} \;
