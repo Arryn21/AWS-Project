@@ -1,0 +1,25 @@
+#Search Subnet
+  Subnet Settings >
+Public:
+
+1.  Subnet name: mySUBNETproject-Pub
+2.  Availability Zone: ap-south-1a
+3.  IPv4 VPC CIDR block: 21.0.0.0/16
+4.  IPv4 subnet CIDR block: 21.0.1.0/24
+        So, out of the 256 addresses in a /24 subnet:
+         - 1 address is reserved for the network address.
+         - 1 address is reserved for the broadcast address.
+         - 254 addresses are usable for hosts on the network.
+
+#If IP is created and attached to machine and that machine is not in running state then AWS will charge us. but if it is in use then it wont charge us.
+
+
+#Add new Subnet
+Private:
+
+1.  Subnet name: mySUBNETproject-Priv
+2.  Availability Zone: ap-south-1b
+3.  IPv4 VPC CIDR block: 21.0.0.0/16
+4.  IPv4 subnet CIDR block: 21.0.2.0/24
+
+click Subnet
