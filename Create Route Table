@@ -1,0 +1,13 @@
+#Search Route Tables
+
+1.  Create Route Table
+2.  Name : myRTproject
+3.  Select our VPC
+
+Click Create Route table
+
+Explicit subnet associations > Edit Subnet Associations
+  Select Public Subnet
+Routes > Edit routes
+  Add route > 0.0.0.0/0 (Anywhere) > internet gateway > Select the IG which we created > Save Changes
+
