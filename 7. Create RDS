@@ -1,0 +1,10 @@
+#search RDS
+
+1.  Create Database
+2.  Standard
+3.  MySQL
+4.  Templates > Free tier
+5.  DB instance identifier: myDBproject
+6.  username: admin
+7.  password: awsDBproject$24 > confirm
+8.  
