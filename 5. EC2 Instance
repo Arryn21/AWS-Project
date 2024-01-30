@@ -73,6 +73,7 @@ copy private IP of private ec2 machine
     ssh -i myKEY.pem ec2-user@IP
 Now we are logged into private machine thru our public machine
 
+
 So now we can terminate our Private EC2 machine coz its not required.
 Select machine private EC2 Instance State > Terminate
 
