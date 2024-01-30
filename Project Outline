@@ -1,0 +1,5 @@
+We need to host a website. and store data in database.
+VPC > private and public subnet.
+EC2 machine ; autoscaling ; loadbalancer ;  RDS
+public      ;   private   ;    public    ;  private
+
