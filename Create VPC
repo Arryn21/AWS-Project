@@ -1,0 +1,14 @@
+#Log into AWS Account
+1.  Search VPC
+    VPC settings > 
+2.  VPC Only
+3.  Name Tag: myVPCproject
+4.  IPv4 CIDR block > manual input > 21.0.0.0/16
+5.  no IPv6
+6.  Tenancy Default
+
+click Create VPC
+
+=> VPC : Virtual Private Cloud ; is a secure, isolated private cloud hosted within a public cloud. VPC customers can run code, store data, host websites, and do anything else they could do in an ordinary private cloud, but the private cloud is hosted remotely by a public cloud provider.
+
+=> CIDR : Classless Inter-Domain Routing ; also known as supernetting. It combines several IP address ranges into one network or route. It improves the efficiency of address distribution and replaces the previous system based on Class A, Class B, and Class C networks.
