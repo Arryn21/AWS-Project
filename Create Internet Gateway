@@ -1,0 +1,12 @@
+#Search Internet gateway
+
+Name tag: myIGproject
+
+Click on Create Internet gateway
+
+State: Detached
+
+Actions > Attach to VPC > Select the VPC that we created previously > Click on Attach
+
+Updated State: Attached
+
