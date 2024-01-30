@@ -1,0 +1,78 @@
+#EC2 Instance
+
+Public Machine
+
+1.  Launch Instance
+2.  Name: myEC2project-Pub
+3.  Everything default. OS Image, Instance Type
+4.  Create a new Key Pair.
+      Name: myKEYproject
+      type: RSA
+      file format: .pem
+      save
+Network Settings > Edit
+5.  Select VPC
+6.  Select Pubic subnet
+7.  Autoassign Public IP - enable
+8.  Security Group: mySGproject
+9.  Add rule
+    Custom TCP ; Port Range 80 ; Source type Anywhere ; Source automatically sets to 0.0.0.0/0
+10.  Storage Default
+11.  Advanced Details (Last option)
+       User data
+        #!/bin/bash
+        yum update -y
+        yum install httpd -y
+        echo "My Content" >> /var/www/html/index.html
+        systemctl start httpd
+        systemctl enable httpd
+
+Launch
+
+Private Machine ( only to see here that it won't have internet access)
+
+1. Launch Instance
+2. Name: myEC2project-Priv
+3. select key pair
+4. select VPC
+5. Select Private Subnet
+6. autoassign public IP disabled
+
+Launch
+
+So the machine with private subnet will not have internet access.. and will only be accessible by the machines in the same VPC only.
+
+
+Select Ec2 public
+copy public IP
+paste in the browser
+content in the index.html file will be displayed
+
+Select Ec2 private
+there wont be any public IP available
+
+Now again copy public IP of public EC2
+open mobaxterm
+session
+ssh
+remote host: public ip
+specify username: ec2-user
+advanced ssh settings
+use private key
+select the saved key
+OK
+
+So now we are logged in our machine public EC2
+    ping google.com #to check that its working properly
+copy contents of myKEYproject
+    vi myKEY.pem
+paste
+save and exit
+    chmod 400 myKEY.pem
+copy private IP of private ec2 machine
+    ssh -i myKEY.pem ec2-user@IP
+Now we are logged into private machine thru our public machine
+
+So now we can terminate our Private EC2 machine coz its not required.
+Select machine private EC2 Instance State > Terminate
+
