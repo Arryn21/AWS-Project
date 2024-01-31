@@ -3,3 +3,20 @@ VPC > private and public subnet.
 EC2 machine ; autoscaling ; loadbalancer ;  RDS
 public      ;   private   ;    public    ;  private
 
+
+
+
+We have AWS Cloud where we can host Virtual machines and lots of other things.
+
+First we set up a VPC - Virtual Private Cloud
+    think of it as a big private container inside a larger public container.
+    this private container's access is defined by us, whether we want to keep it public or private or both
+
+Then we setup IP addresses (subnets) through which we will access that VPC by our local machines.
+    We have our big private container at some facility of AWS. now we need to access it.
+    so we setup subnets.
+
+We give internet gateway to this subnet that is connect the subnet to the outer world of internet
+
+Now we configure Paths. i.e Route Table with the subnet that is ofcourse inside our VPC
+    
