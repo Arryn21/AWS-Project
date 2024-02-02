@@ -7,7 +7,7 @@ to check versions
     php -v
     httpd -v
 add ec2-user to apache group
-    usermod -a -G apache ec2-user
+    sudo usermod -a -G apache ec2-user
 change group ownership of dir
     sudo chown -R ec2-user:apache /var/www
     sudo chmod 2775 /var/www
