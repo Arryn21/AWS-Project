@@ -5,7 +5,7 @@
 3.  Select our VPC
 
 Click Create Route table
-
+subnet associations>
 Explicit subnet associations > Edit Subnet Associations
   Select Public Subnet
 Routes > Edit routes
