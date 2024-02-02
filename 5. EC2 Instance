@@ -6,7 +6,7 @@ Public Machine
 2.  Name: myEC2project-Pub
 3.  Everything default. OS Image, Instance Type
 4.  Create a new Key Pair.
-      Name: myKEYproject
+      Name: meriChabi
       type: RSA
       file format: .pem
       save
