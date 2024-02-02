@@ -1,7 +1,7 @@
 #Search Subnet
   Subnet Settings >
 Public:
-
+select the VPC
 1.  Subnet name: mySUBNETproject-Pub
 2.  Availability Zone: ap-south-1a
 3.  IPv4 VPC CIDR block: 21.0.0.0/16
