@@ -7,4 +7,9 @@
 5.  DB instance identifier: myDBproject
 6.  username: admin
 7.  password: awsDBproject$24 > confirm
-8.  everything else default. 
+8.  select your VPC
+9.  select your subnet
+10.  Select your Security Group
+11.  everything else default. 
+
+Done.
