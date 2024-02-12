@@ -11,5 +11,5 @@
 9.  select your subnet
 10.  Select your Security Group
 11.  everything else default. 
-
+12.  In additional > give name for an initial databse to be created.
 Done.
