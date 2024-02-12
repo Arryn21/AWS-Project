@@ -1,0 +1,40 @@
+Auto Scaling groups
+Name
+Select Template we just made
+Version > Latest    #coz any changes made in template could reflect automatically here
+#Confirm image using AMI ID
+
+NEXT
+
+Network >
+  Select your VPC
+  Select Private Subnet  #coz we dont everyone to access it
+
+NEXT
+
+Attach existing Load balancers
+  Classic
+  select your LB
+Health check > 10s
+
+NEXT
+
+Scaling >
+  MIN 1 : MAX 10  #for now
+  Target tracking scaling policy
+  Target Value 30
+  Instance Warmup 20s
+  No Policy
+
+NEXT
+
+Add Notification
+
+NEXT
+
+Add Tag > Name : Project
+
+NEXT
+
+Review and DONE!
+
