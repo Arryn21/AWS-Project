@@ -1,0 +1,14 @@
+Create Load Balancer
+Classic Load Balancer
+Load Balancer Name
+internet facing
+Select VPC
+Select Availability Zones
+Select Security group
+Health Checks
+  Ping Path
+    /SamplePage.php
+
+everything else default
+
+Done!
