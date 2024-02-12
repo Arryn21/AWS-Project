@@ -1,0 +1,14 @@
+#Basically all the details of the EC2 machine
+
+Create Launch Template
+Name
+description with version no.
+select your image
+instance type t2.micro
+select key pair
+select private subnet
+select security group
+Advanced Network Configurations>
+  Auto assign IP > disable
+
+Done!
